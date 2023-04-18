@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'stopwatch';
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.80),transparent), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 5%;
+    position: relative;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap:wrap;
+    padding: 5px 0;
+}
+.logo{
+    margin-top: 1vh;
+    width: 70px;
+    cursor: pointer;
+}
+.cart-icon{
+    width: 50px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:#fe6b0f;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.text-box h1{
+    font-size: 70px;
+    margin-top: 60px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;      
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.text-box p{
+    margin: 30px auto;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 5px;
+}
+
+.social-icons{
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+}
+.social-icons img{
+    width: 30px;
+    display: block;
+    margin: 20px 20px;
+}
+.btn{
+     font-size: 20vw;
+     width: 150px;
+     height: 81px;
+     background: url(BUTT1.png);
+     border: 0px;
+     margin-top: 43vh;
+     margin-left: 40.035vw;
+     position: absolute;
+    
+}
+.ig:hover{
+    animation: shake .3s linear infinite both;
+}
+.fb:hover{
+    animation: shake .3s linear infinite both;
+}
+.btn:after{
+    background: url(BUTT2.png);
+}
+.logo:hover{
+    animation: shake .3s linear infinite both;
+}
+.cart-icon:hover{
+    animation: shake .3s linear infinite both;
+}
+.btn:hover{
+    animation: shake .3s linear infinite both;
+    cursor: pointer;
+    background: url(BUTT2.png);
+}
+@keyframes shake {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+     20%{
+        -webkit-transform: translate(-2px,2px) ;
+        transform: translate(-2px,2px);
+     }
+     40%{
+        -webkit-transform: translate(-2px,-2px) ;
+        transform: translate(-2px,-2px);
+     }
+     60%{
+        -webkit-transform: translate(2px,2px) ;
+        transform: translate(2px,2px);
+     }
+     80%{
+        -webkit-transform: translate(2px,-2px) ;
+        transform: translate(2px,-2px);
+     }
+     100%{
+        -webkit-transform: translate(0) ;
+        transform: translate(0);
+     }
+}

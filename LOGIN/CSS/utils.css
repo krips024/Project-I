@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&family=VT323&display=swap');
+
+:root{
+    --main-bg-color: brown;
+    --font1: 'Alkatra', cursive;
+    --font2: 'VT323', monospace;
+}
+.max-width-1 {
+    max-width: 80vw;
+}
+
+.max-width-2 {
+    max-width: 40vw;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.buttons{
+    padding-top: 20px;
+    align-content: center;
+width: 50%;
+margin: 0 auto;
+}

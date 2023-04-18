@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button test</title>
+    <style>
+        .container{
+            border: none;
+            background-color: none;
+            padding: 34px;
+            margin: 34px auto;
+            width: 500px;
+        }
+        .button{
+            background: none;
+            border: none;
+        }
+
+
+        .bounce_button:hover {
+            animation: shake .5s;
+            animation-name: shake;
+            animation-duration: 0.5s;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: none;
+            animation-play-state: running;
+            /* animation-timeline: ; */
+            animation-iteration-count: infinite;
+        }
+        .pixelated {
+            image-rendering:optimizeSpeed;             /* Legal fallback */
+            image-rendering:-moz-crisp-edges;          /* Firefox        */
+            image-rendering:-o-crisp-edges;            /* Opera          */
+            image-rendering:-webkit-optimize-contrast; /* Safari         */
+            image-rendering:optimize-contrast;         /* CSS3 Proposed  */
+            image-rendering:crisp-edges;               /* CSS4 Proposed  */
+            image-rendering:pixelated;                 /* CSS4 Proposed  */
+            -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="cont">
+        <h2> I wanna press "Fuck You"</h2>
+        <button class="button" onclick="clog()"><input name="fuckyou" class="animated pulse animated-infinite bounce_button" type="image" src="BUTTON1.png"></button>
+    </div>
+</body>
+</html>
